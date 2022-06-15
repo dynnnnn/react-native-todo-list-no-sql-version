@@ -78,6 +78,8 @@ export default function NotesScreen({ navigation, route }) {
 
   }
 
+  
+
   // The function to render each row in our FlatList
   function renderItem({ item }) {
     return (
@@ -96,6 +98,7 @@ export default function NotesScreen({ navigation, route }) {
         <TouchableOpacity onPress={() => deleteNote(item.id)}>
           <Ionicons name="trash" size={16} color="#944" />
         </TouchableOpacity>
+        
       </View>
     );
   }
